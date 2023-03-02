@@ -41,3 +41,22 @@ int main()
     cout << "Second string : " << s2;
     return 0;
 }
+
+/* same code  Using <string> header file 
+#include <iostream>
+#include <string>
+
+void mycopy(const std::string& s1, std::string& s2)
+{
+    s2 = s1;
+}
+
+int main()
+{
+    std::string s1 = "HEYHOWAREYOU";
+    std::string s2;
+    mycopy(s1, s2);
+    std::cout << "Second string: " << s2 << std::endl;
+    return 0;
+}
+*/
